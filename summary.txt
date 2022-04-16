@@ -1,0 +1,17 @@
+
+
+@Component
+@Component is an annotation that allows Spring to automatically detect our custom beans.
+
+In other words, without having to write any explicit code, Spring will:
+
+Scan our application for classes annotated with @Component
+Instantiate them and inject any specified dependencies into them
+Inject them wherever needed
+However, most developers prefer to use the more specialized stereotype annotations to serve this function.
+
+@Component vs @Bean
+@Bean is also an annotation that Spring uses to gather beans at runtime, but it's not used at the class level. Instead, we annotate methods with @Bean so that Spring can store the method's result as a Spring bean.
+
+@Autowired.
+Starting with Spring 2.5, the framework introduced annotations-driven Dependency Injection. The main annotation of this feature is @Autowired. It allows Spring to resolve and inject collaborating beans into our bean.
